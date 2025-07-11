@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    background-color: #f7f7f7; /* Light background */
+    color: #333; /* Dark text for contrast */
+}
+
+header {
+    background: #ffffff; /* White header */
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Add some space between links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Dark text */
+    font-weight: bold;
+}
+
+#hero {
+    background: linear-gradient(135deg, #000, #333); /* Dark gradient background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin-bottom: 20px; /* Space below the image */
+    width: 150px; /* Fixed size for the image */
+    height: 150px; /* Fixed size for the image */
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin: 10px 0; /* Space around headings */
+}
+
+.hero-content h2 {
+    font-size: 24px;
+    margin: 10px 0; /* Space around headings */
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 10px; /* Margin between buttons */
+    background-color: white; /* Button background */
+    color: #000; /* Button text */
+    border: 2px solid #000; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #333; /* Dark background on hover */
+    color: white; /* White text on hover */
+}
+
+.about-section {
+    padding: 40px 20px; /* Padding for the section */
+    text-align: center; /* Centered text */
+}
+
+footer {
+    text-align: center; /* Centered footer text */
+    padding: 20px; /* Space within footer */
+    background-color: #ffffff; /* White footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 28px; /* Smaller heading on smaller screens */
+    }
+
+    .hero-content h2 {
+        font-size: 20px; /* Smaller subheading on smaller screens */
+    }
+
+    .button {
+        padding: 8px 15px; /* Smaller button padding on mobile */
+        font-size: 14px; /* Smaller button font size on mobile */
+    }
+}
